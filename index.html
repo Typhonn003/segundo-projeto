@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <link rel="shortcut icon" href="imagem/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1>Lembrete pessoal sobre Links</h1>
+        <hr>
+        <section>
+            <h2>Tag &lt;a&gt; para colocar link em um site</h2>
+            <p>Exemplo do código</p>
+            <code><pre>&lt;a href="<mark><strong>Local onde vai ficar o link</strong></mark>"&gt;<mark><strong>Palavra clicavel para o link</strong></mark>&lt;/a&gt;</pre></code>
+            <h3>Exemplo de como vai ficar</h3>
+            <a href="page2.html">Palavra clicavel para o link</a>
+        </section>
+        <hr>
+        <section>
+            <h2>Atributo "target" dentro da tag &lt;a&gt;</h2>
+            <code><pre>&lt;a href="https://www.link.com" <mark><strong>target="Valores"</strong></mark>&gt;Palavra clicavel para o link&lt;/a&gt;</pre></code>
+            <h3>Valores</h3>
+            <ul type="square">
+                <li><strong>_self</strong> vai abrir o link na janela atual (padrão)</li>
+                <li><strong>_blank</strong> vai abrir o link em uma nova janela em branco</li>
+            </ul>
+            <h3>Exemplos de como vai ficar</h3>
+            <ul type="square">
+                <li><a href="page2.html" target="_self">Abrir na mesma janela</a></li>
+                <li><a href="page2.html" target="_blank">Abrir em uma nova janela</a></li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Atributo "rel" dentro da tag &lt;a&gt;</h2>
+            <code><pre>&lt;a href="https://www.link.com" target="_self" <mark><strong>rel="Valores"</strong></mark>&gt;Palavra clicavel para o link&lt;/a&gt;</pre></code>
+            <h3>Valores</h3>
+            <ul type="square">
+                <li><strong>next</strong> indica que o link é para a próxima parte do documento atual</li>
+                <li><strong>prev</strong> indica que o link é para a parte anterior do documento atual</li>
+                <li><strong>author</strong> indica que é um link para o site do autor do artico atual</li>
+                <li><strong>external</strong> indica que é um link para outro site que não faz parte do site atual</li>
+                <li><strong>nofollow</strong> indica que é um link para um site não endossado, como um link pago</li>
+            </ul>
+        </section>
+        <hr>
+        <section>
+            <h2>Criando links de download com a tag &lt;a&gt;</h2>
+            <code><pre>&lt;a href="Link ou caminho para o item do download" <mark><strong>download="Nome do arquivo com a extensão"</strong></mark> <mark><strong>type="Media types"</strong></mark>&gt;Palavra clicavel para o link&lt;/a&gt;</pre></code>
+            <p>O atributo <strong>download</strong> dentro da tag <strong>&lt;a&gt;</strong> deve ter em seu valor o
+                nome do arquivo de download junto com sua extensão. <br> Exemplo:
+                download="<strong>meulivro.pdf</strong>"</p>
+            <p>O atributo <strong>type</strong> dentro da tag <strong>&lt;a&gt;</strong> deve ter em seu valor o tipo de
+                arquivo que está sendo baixado, como o exemplo a baixo.</p>
+            <ul type="square">
+                <li><strong>application/zip</strong> indica que é um aplicativo com a extensão zip</li>
+                <li><strong>video/mp4</strong> indica que é um video no formato mp4</li>
+                <li><strong>image/png</strong> indica que é uma imagem no formato png</li>
+            </ul>
+            <a href="https://www.iana.org/assignments/media-types/media-types.xhtml" target="_blank">Lista de MEDIA
+                TYPES</a>
+            <h3>Exemplo</h3>
+            <a href="apostila10.zip" download="apostila10.zip" type="application/zip">Download</a>
+        </section>
+        <hr>
+        <section>
+            <h2>Atributo "hreflang" dentro da tag &lt;a&gt;</h2>
+            <p>Exemplo do código, Jocsã comentou que é utilizado apenas em casos específicos para otimizar o bot do
+                google, caso o link esteja em um site brasileiro e leve para outro site brasileiro, não tem necessidade
+                de utilizar o atributo hreflang.</p>
+            <code><pre>&lt;a href="https://www.link.com" <mark><strong>hreflang="idioma de origem do site"</strong></mark>&gt;Palavra clicavel para o link&lt;/a&gt;</pre></code>
+            <p>Dentro do atributo <strong>hreflang</strong> devo indicar o idioma do site para qual o link irá
+                redirecionar, isso permite avisar ao navegador e softwares de tradução como lidar caso o visitante opte
+                por traduzir automaticamente os conteúdos.</p>
+            <h3>Exemplo</h3>
+            <a href="https://videocardz.com/" hreflang="en" target="_blank" rel="external">Site em inglês</a>
+        </section>
+        <hr>
+        <a href="https://github.com/gustavoguanabara/html-css/blob/master/aulas-pdf/10%20-%20Liga%C3%A7%C3%B5es%20em%20toda%20parte.pdf"
+            target="_blank" rel="external">Conteúdo baseado no PDF do professor Gustavo Guanabara</a>
+    </main>
+
+</body>
+
+</html>
