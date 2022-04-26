@@ -10,7 +10,7 @@ main {
     background: #13678A;
     border-radius: 10px;
     width: 1120px;
-    padding: 10px;
+    padding: 15px;
     margin: auto;
 }
 
@@ -20,6 +20,12 @@ section {
     width: 1100px;
     padding: 10px;
     box-shadow: 3px 3px 5px #072734;
+    padding: 10px;
+    margin: 15px auto;
+}
+
+section li {
+    margin-bottom: 10px;
 }
 
 h1 {
@@ -47,4 +53,16 @@ a:hover {
 mark {
     color: #ffffff;
     background-color: #012030;
+}
+
+.link-externo {
+    text-align: right;
+}
+
+.link-externo a {
+    box-shadow: 3px 3px 5px #072734;
+}
+
+.botao-inicio {
+    text-align: center;
 }
